@@ -30,7 +30,6 @@ import gql from 'graphql-tag';
   }
 })
 export default class App extends Vue {
-  version = APP_VERSION;
   loading = false;
 }
 </script>
