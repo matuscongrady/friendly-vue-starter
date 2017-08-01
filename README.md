@@ -37,7 +37,7 @@ Main focus:
 
 ```npm run check``` to check for outdated packages
 
-There's also a husky pre-commit hook included, that will run ```eslint``` before commiting and possibly abort the operation if there are any errors.
+There's also a [husky](https://github.com/typicode/husky) pre-commit hook included, that will run ```eslint``` before commiting and possibly abort the operation if there are any errors.
 You can also add things like flow-typechecking and unit/e2e testing here, to ensure quality of your git repository
 
 ### Roadmap
