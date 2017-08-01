@@ -52,7 +52,7 @@ You can also add things like flow-typechecking and unit/e2e testing here, to ens
 
 ### Backend
 Friendly-vue-starter is configured to use GraphQL. You can use any GraphQL backend, your custom backend or BaaS solution like [graph.cool](https://www.graph.cool/) or [scaphold.io](https://scaphold.io/)<br />
-If you do not want or can't use a GraphQL backend, you can simply remove apollo-client and fetch your data using any HTTP client (I recommend using [axios](https://github.com/mzabriskie/axios))
+If you do not want or can't use a GraphQL backend, you can simply remove apollo-client and fetch your data using any HTTP client (I recommend using [axios](https://github.com/mzabriskie/axios) [unfetch](https://github.com/developit/unfetch) )
 
 ### Contributors
 <p><img src="https://cdn.pbrd.co/images/GBXxXB1.png" height="105" width="78"></p>
