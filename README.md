@@ -10,9 +10,9 @@ Main focus:
 
   * Vue.js 2 with single file components, Sass(Scss) and [vue-class-component](https://github.com/vuejs/vue-class-component) / [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator)
   * GraphQL (via [apollo-client](https://github.com/apollographql/apollo-client))
-  * [Vuex]() state management
-  * [Vue-router]()
-  * [Vue-i18n]()
+  * [Vuex](https://vuex.vuejs.org/en/getting-started.html) state management
+  * [Vue-router](https://router.vuejs.org/en/essentials/getting-started.html)
+  * [Vue-i18n](http://kazupon.github.io/vue-i18n/en/)
   * Webpack 3
   * Hot-module-replacement for Vue-components, Vuex store and intl-messages!
   * Critical-path css extraction via [critical](https://github.com/addyosmani/critical)
