@@ -16,7 +16,7 @@ Main focus:
   * Webpack 3
   * Hot-module-replacement for Vue-components, Vuex store and intl-messages!
   * Critical-path css extraction via [critical](https://github.com/addyosmani/critical)
-  * Full ES6/ES7 and automatic polyfilling based on browser wish to support, via [babel-preset-env](https://github.com/babel/babel-preset-env)
+  * Full ES6/ES7 support and automatic polyfilling based on browsers you wish to support, via [babel-preset-env](https://github.com/babel/babel-preset-env)
   * Eslint with [airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and [Prettier](https://github.com/prettier/prettier) integration
   * Route-based code splitting
   * Bundle-analyzer, bundle size optimization, friendly and beautiful webpack messages, and much more!
