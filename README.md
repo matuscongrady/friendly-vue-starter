@@ -23,7 +23,12 @@ Main focus:
 
 ### Usage
 
-```git clone```
+```
+git clone https://github.com/mcongy/friendly-vue-starter
+cd friendly-vue-starter
+npm install
+npm run dev
+```
 
 ```npm run dev``` to start the webpack-dev-servcer in development mode with hot-reloading
 
