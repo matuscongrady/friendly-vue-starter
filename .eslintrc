@@ -1,0 +1,59 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "html",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./webpack.config.js"
+      }
+    }
+  },
+  "globals": {
+    "module": true,
+    "require": true,
+    "IS_PROD": true,
+    "APP_NAME": true,
+    "APP_VERSION": true,
+    "DEFAULT_LOCALE": true,
+    "API_ENDPOINT": true
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier"
+  ],
+  "rules": {
+    "linebreak-style": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "parser": "babylon",
+        "printWidth": 105,
+        "singleQuote": true,
+        "bracketSpacing": true
+      }
+    ],
+    "no-new": 0,
+    "arrow-parens": 0,
+    "no-restricted-syntax": 0,
+    "eqeqeq": 0,
+    "operator-linebreak": 0,
+    "no-underscore-dangle": 0,
+    "semi": 0,
+    "global-require": 0,
+    "consistent-return": 0,
+    "no-console": [1, { "allow": ["warn", "error"] }],
+    "import/prefer-default-export": 0,
+    "no-mixed-operators": 0,
+    "comma-dangle": 0,
+    "no-plusplus": 0,
+    "object-curly-spacing": 0,
+    "brace-style": 0
+  }
+}
