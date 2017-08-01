@@ -11,7 +11,6 @@ import { Component } from 'vue-property-decorator';
 @Component
 export default class App extends Vue {
   version = APP_VERSION;
-  loading = false;
 }
 </script>
 
