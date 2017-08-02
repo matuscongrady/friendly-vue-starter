@@ -42,6 +42,8 @@ npm run dev
 
 ```npm run check``` to check for outdated packages
 
+```npm run serve:build``` to serve production build with spa-http-server (works with history API routing)
+
 There's also a [husky](https://github.com/typicode/husky) pre-commit hook included, that will run ```eslint``` before commiting and possibly abort the operation if there are any errors.
 You can also add things like flow-typechecking and unit/e2e testing here, to ensure quality of your git repository
 
