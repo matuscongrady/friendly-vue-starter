@@ -3,6 +3,7 @@
       "./src/**/*"
     ],
     "compilerOptions": {
-      "experimentalDecorators": true
+      "experimentalDecorators": true,
+      "module": "es2015"
     }
   }

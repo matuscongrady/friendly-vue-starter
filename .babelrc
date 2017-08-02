@@ -1,7 +1,7 @@
 {
   "plugins": [
     "lodash",
-    ["transform-define", "src/constants.js"],
+    ["transform-define", "src/env-config.js"],
     ["syntax-dynamic-import", { "useBuiltIns": true }],
     ["transform-object-rest-spread", { "useBuiltIns": true }],
     ["transform-decorators-legacy", { "useBuiltIns": true }],
