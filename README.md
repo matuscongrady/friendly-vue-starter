@@ -49,8 +49,8 @@ You can also add things like flow-typechecking and unit/e2e testing here, to ens
 
 - [ ] Add unit-tests (propably via [vue-test-utils](https://github.com/vuejs/vue-test-utils) when it's finished)
 - [ ] Add e2e tests (probably via [testcafe](https://github.com/DevExpress/testcafe) and [testcafe-vue-selectors](https://github.com/devexpress/testcafe-vue-selectors))
-- [ ] Possibly integrate Typescript (there's and ongoing work to improve typescript experience in Vue.js)
-- [ ] Possibly integrate Flow-type (currently there are a bit of problems and bugs that make flow-type (in my opinion) not-worth to use with Vue.js, but this might change in the future)
+- [ ] Possibly integrate Typescript (there's an ongoing work to improve typescript experience in Vue.js)
+- [ ] Possibly integrate Flow-type (currently there a lot of small issues that make flow-type (in my opinion) not-worth to use with Vue.js, but this might change in the future)
 
 ### Caveats
 * Prettier will format first line of script tags in .vue files badly. There is an ongoing work on better Vue.js integration (even for templates!)
