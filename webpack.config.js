@@ -11,6 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const critical = require('critical');
 const WebpackOnBuildPlugin = require('on-build-webpack');
+const { execSync } = require('child_process');
 
 const port = process.env.PORT || 3000;
 const isDev = process.env.NODE_ENV === 'development';
@@ -150,6 +151,8 @@ if (isDev) {
         () => {
           fs.unlink(path.resolve(__dirname, './dist/style.css'), err => err && console.warn(err));
           fs.unlink(path.resolve(__dirname, './dist/style.css.map'), err => err && console.warn(err));
+          const cssFile = fs.readdirSync('./dist').find(el => el.match(/\.css$/));
+          execSync(`npx cssnano dist/${cssFile} dist/${cssFile}`);
         }
       );
     })

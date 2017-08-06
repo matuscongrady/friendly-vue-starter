@@ -4,24 +4,31 @@
   "version": "1.0.0",
   "author": "Matúš Čongrády <m.congrady@gmail.com>",
   "main": "./src/index.js",
+  "keywords": [
+    "Vue",
+    "Vuex",
+    "Vue-i18n",
+    "GraphQL",
+    "Vue starter"
+  ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --hide-modules",
-    "analyze": "cross-env NODE_ENV=analyze webpack --hide-modules",
-    "serve:build": "node_modules/.bin/http-server ./dist -p 3001 --cors --push-state",
+    "analyze": "rimraf dist && cross-env NODE_ENV=analyze webpack --hide-modules",
+    "serve:build": "npx http-server ./dist -p 3001 --cors --push-state",
     "clean": "rimraf node_modules package-lock.json dist yarn.lock",
-    "lint": "node_modules/.bin/eslint .",
-    "check": "node_modules/.bin/npm-check-updates",
+    "lint": "npx eslint .",
+    "check": "npx ncu",
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "apollo-client": "^1.9.0-1",
+    "apollo-client": "^1.9.0",
     "babel-polyfill": "^6.23.0",
     "graphql-tag": "^2.4.2",
     "lodash": "^4.17.4",
     "vue": "^2.4.2",
-    "vue-apollo": "^2.1.0-beta.19",
-    "vue-i18n": "^7.1.0",
+    "vue-apollo": "^2.1.0-beta.20",
+    "vue-i18n": "^7.1.1",
     "vue-property-decorator": "^5.2.1",
     "vue-router": "^2.7.0",
     "vuex": "^2.3.1",
@@ -40,9 +47,10 @@
     "babel-preset-env": "^1.6.0",
     "chalk": "^2.0.1",
     "critical": "^0.9.0",
-    "cross-env": "^5.0.2",
+    "cross-env": "^5.0.4",
     "css-loader": "^0.28.4",
-    "eslint": "^4.3.0",
+    "cssnano-cli": "^1.0.5",
+    "eslint": "^4.4.0",
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-config-prettier": "^2.3.0",
     "eslint-import-resolver-webpack": "^0.8.3",
@@ -64,10 +72,14 @@
     "sass-loader": "^6.0.6",
     "spa-http-server": "^0.9.0",
     "style-loader": "^0.18.2",
-    "vue-loader": "^13.0.2",
+    "vue-loader": "^13.0.4",
     "vue-template-compiler": "^2.4.2",
     "webpack": "^3.4.1",
-    "webpack-bundle-analyzer": "^2.8.3",
+    "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.6.1"
+  },
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 5.2.0"
   }
 }
