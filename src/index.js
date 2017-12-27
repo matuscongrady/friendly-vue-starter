@@ -3,7 +3,9 @@ import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 import VueApollo from 'vue-apollo';
 import { Component } from 'vue-property-decorator';
-import { ApolloClient, createNetworkInterface } from 'apollo-client';
+import ApolloClient from 'apollo-client'
+import { HttpLink } from 'apollo-link-http'
+import { InMemoryCache } from 'apollo-cache-inmemory'
 import { sync } from 'vuex-router-sync';
 
 import './index.scss';
@@ -14,17 +16,17 @@ import router from './router';
 import { getCurrentUserLanguage } from './services/locale-service';
 
 Vue.use(VueI18n);
-Vue.use(VueApollo);
 Component.registerHooks(['beforeRouteEnter', 'beforeRouteLeave']);
 
-const apolloClient = new ApolloClient({
-  networkInterface: createNetworkInterface({
-    uri: API_ENDPOINT,
-    transportBatching: true
-  }),
-  connectToDevTools: true
-});
-const apolloProvider = new VueApollo({ defaultClient: apolloClient });
+const client = new ApolloClient({
+  link: new HttpLink({ uri: 'API_ENDPOINT' }),
+  cache: new InMemoryCache()
+})
+Vue.use(VueApollo)
+
+const apolloProvider = new VueApollo({
+  defaultClient: client
+})
 const i18n = new VueI18n({ locale: getCurrentUserLanguage(), messages });
 
 if (module.hot) {
